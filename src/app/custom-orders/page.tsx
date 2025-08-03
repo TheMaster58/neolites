@@ -7,7 +7,7 @@ export default function CustomOrdersPage() {
         {/* Back to Home Button */}
         <div className="mb-8">
           <Link href="/" className="neon-button bg-transparent border-2 border-pink-400 text-pink-400 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-pink-400 hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(236,72,153,0.5)] hover:shadow-[0_0_30px_rgba(236,72,153,0.8)]">
-            ← Back to Home
+            ← Back
           </Link>
         </div>
 
