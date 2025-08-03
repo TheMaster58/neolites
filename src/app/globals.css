@@ -20,7 +20,67 @@
 }
 
 body {
-  background: var(--background);
+  background: url('/background_2.png') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Neon Title Styling */
+.neon-title {
+  color: #fff;
+  font-family: var(--font-dancing-script), cursive, serif;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #0ff,
+    0 0 20px #0ff,
+    0 0 25px #0ff,
+    0 0 30px #0ff,
+    0 0 35px #0ff;
+  animation: neon-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #0ff,
+      0 0 20px #0ff,
+      0 0 25px #0ff,
+      0 0 30px #0ff,
+      0 0 35px #0ff;
+  }
+  to {
+    text-shadow: 
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 8px #0ff,
+      0 0 12px #0ff,
+      0 0 15px #0ff,
+      0 0 18px #0ff,
+      0 0 22px #0ff;
+  }
+}
+
+/* Neon Button Styling */
+.neon-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.neon-button:hover::before {
+  left: 100%;
 }
