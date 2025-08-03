@@ -68,3 +68,12 @@ body {
 .neon-button {
   position: relative;
 }
+
+/* Glassmorphism Effect */
+.glassmorphism-cyan {
+  background: rgba(22, 78, 99, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(34, 211, 238, 0.25);
+}
